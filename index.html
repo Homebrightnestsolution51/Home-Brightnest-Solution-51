@@ -3,68 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home Brightnest Solution 51 - Your Trusted Partner for Smart & Beautiful Homes">
+    <meta name="description" content="Home Brightnest Solution 51 - Your Trusted Partner For Smart & Beautiful Homes">
     <title>Home Brightnest Solution 51</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {font-family: Arial, sans-serif; margin:0; padding:0; background:#fff; color:#333;}
-        header {background:#f5f5f5; display:flex; align-items:center; justify-content:space-between; padding:10px 20px;}
-        header img {height:60px;}
-        nav a {margin:0 10px; text-decoration:none; color:#333; font-weight:bold;}
-        .hero {background:#f0f8ff; text-align:center; padding:50px 20px;}
-        .hero h1 {color:#f4a300;}
-        .hero p {font-size:18px;}
-        .cta-btn {background:#f4a300; color:#fff; padding:10px 20px; border:none; cursor:pointer; font-size:18px;}
-        .services {display:flex; flex-wrap:wrap; justify-content:center; padding:40px 20px;}
-        .service {flex:1 1 200px; margin:10px; padding:20px; border:1px solid #ddd; border-radius:8px; text-align:center;}
-        .service i {font-size:40px; color:#f4a300; margin-bottom:10px;}
-        footer {background:#333; color:#fff; text-align:center; padding:20px;}
-        footer a {color:#f4a300; text-decoration:none;}
+        body {margin: 0; font-family: Arial, sans-serif;}
+        header {background: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        header img {height: 60px;}
+        nav a {margin: 0 15px; text-decoration: none; color: #333; font-weight: bold;}
+        .hero {background: url('images/1.jpg') no-repeat center center/cover; height: 80vh; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
+        .hero h1 {font-size: 2.5rem; background-color: rgba(0,0,0,0.5); padding: 10px 20px;}
+        .btn {background: #ff9900; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px;}
+        section {padding: 50px 20px; text-align: center;}
+        .services {display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;}
+        .service-card {background: #f9f9f9; width: 250px; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        .service-card img {width: 100%; height: 180px; border-radius: 10px;}
+        .gallery img {width: 300px; height: 200px; margin: 10px; border-radius: 10px;}
+        footer {background: #333; color: #fff; text-align: center; padding: 20px;}
+        footer a {color: #ff9900; text-decoration: none;}
     </style>
 </head>
 <body>
     <header>
-        <img src="Picsart_25-07-27_15-25-13-086.jpg" alt="Home Brightnest Logo">
+        <img src="images/logo.png" alt="Home Brightnest Solution 51 Logo">
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section class="hero" id="home">
-        <h1>Welcome to Home Brightnest Solution 51</h1>
-        <p>Your Trusted Partner for Smart & Beautiful Homes</p>
-        <button class="cta-btn" onclick="window.location.href='https://wa.me/9475543551'">Book Now on WhatsApp</button>
+        <h1>Your Trusted Partner For Smart & Beautiful Homes</h1>
+        <a href="https://wa.me/9475543551" class="btn">Book Now on WhatsApp</a>
     </section>
 
-    <section class="services" id="services">
-        <div class="service">
-            <i class="fas fa-paint-roller"></i>
-            <h3>Painting Solutions</h3>
-            <p>High-quality interior and exterior painting services for your home.</p>
-        </div>
-        <div class="service">
-            <i class="fas fa-bolt"></i>
-            <h3>Electrical Works</h3>
-            <p>Professional electrical installation and repair services.</p>
-        </div>
-        <div class="service">
-            <i class="fas fa-couch"></i>
-            <h3>Interior Design</h3>
-            <p>Transform your space with our modern interior solutions.</p>
-        </div>
-        <div class="service">
-            <i class="fas fa-tools"></i>
-            <h3>Home Repairs</h3>
-            <p>Reliable home repair and maintenance services.</p>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide professional Painting, Electrical, Interior Designing, and Home Repair solutions to make your home smart and beautiful. With expert technicians and top-quality service, we ensure 100% customer satisfaction.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="images/2.jpg" alt="Painting Service">
+                <h3>Painting Solutions</h3>
+                <p>Professional home and office painting services with premium finish.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/3.jpg" alt="Electrical Work">
+                <h3>Electrical Works</h3>
+                <p>Reliable and safe electrical installations and repairs.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/4.jpg" alt="Interior Design">
+                <h3>Interior Designing</h3>
+                <p>Modern and stylish interior solutions tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/5.jpg" alt="Home Repairs">
+                <h3>Home Repairs</h3>
+                <p>Quick and efficient repair services for your home maintenance.</p>
+            </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <p>Contact us on WhatsApp: <a href="https://wa.me/9475543551">9475543551</a></p>
-        <p>&copy; 2025 Home Brightnest Solution 51. All Rights Reserved.</p>
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery">
+            <img src="images/6.jpg" alt="Gallery 1">
+            <img src="images/7.jpg" alt="Gallery 2">
+            <img src="images/8.jpg" alt="Gallery 3">
+            <img src="images/9.jpg" alt="Gallery 4">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📞 Call or WhatsApp: <a href="https://wa.me/9475543551">9475543551</a></p>
+        <p>📍 Location: All over West Bengal & Assam ,India</p>
+        <p>📧 Email: homebrightsolutions6@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Home Brightnest Solution 51. All Rights Reserved. | <a href="#home">Back to top</a></p>
     </footer>
 </body>
 </html>
